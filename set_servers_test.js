@@ -73,15 +73,9 @@ dns.resolve4(resolve_domain, function(err, addresses, family) {
                     console.log(resolve_domain, 'resolve6:', addresses[0]);      
                 }           
                 
-                console.log('current servers:', dns.getServers());  
-                
-                dns.resolve4(resolve_domain, function(err, addresses, family) {
-                    
-                    console.log('current servers:', dns.getServers());                
-                    
-                    //dns.setServers(['2001:4860:4860::8888']); /* ipv6 test need */                       
-                    
-                });
+                console.log('current servers:', dns.getServers());                  
+          
+                //dns.setServers(['2001:4860:4860::8888']); /* ipv6 test need */  
                        
             });
         });        
